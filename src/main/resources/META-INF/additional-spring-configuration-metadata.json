@@ -24,16 +24,6 @@
       "name": "spring.datasource.druid.timeBetweenEvictionRunsMillis",
       "type": "java.lang.String",
       "description": "Description for spring.datasource.druid.timeBetweenEvictionRunsMillis."
-    },
-    {
-      "name": "spring.datasource.druid.minEvictableIdleTimeMillis",
-      "type": "java.lang.String",
-      "description": "Description for spring.datasource.druid.minEvictableIdleTimeMillis."
-    },
-    {
-      "name": "spring.datasource.druid.validationQuery",
-      "type": "java.lang.String",
-      "description": "Description for spring.datasource.druid.validationQuery."
     }
   ]
 }
