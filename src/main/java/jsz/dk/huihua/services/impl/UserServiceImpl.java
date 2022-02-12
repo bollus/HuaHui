@@ -96,7 +96,8 @@ public class UserServiceImpl implements UserService {
     public GoogleSecretVO generateGoogleSecret(User user) {
         //Google密钥
         String randomSecretKey = GoogleAuthenticator.getRandomSecretKey();
-        String googleAuthenticatorBarCode = GoogleAuthenticator.getGoogleAuthenticatorBarCode(randomSecretKey, user.getUsername(), "运维管理平台");
+        //TODO 通过系统配置获取 Issuer 名称
+        String googleAuthenticatorBarCode = GoogleAuthenticator.getGoogleAuthenticatorBarCode(randomSecretKey, user.getUsername(), "花卉销售管理平台");
         GoogleSecretVO googleSecretVO = new GoogleSecretVO();
         //Google密钥
         googleSecretVO.setSecret(randomSecretKey);
